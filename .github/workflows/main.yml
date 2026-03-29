@@ -31,6 +31,7 @@ jobs:
           git config --local user.name "GitHub Actions"
           # 1. จัดการ "Add" และ "Commit" งานของเราให้เรียบร้อยก่อน (แก้ปัญหา unstaged changes)
           git add MOM.w3u
+             git add theiness.m3u8
           git commit -m "Auto update $(date)" || exit 0
           # 2. หลังจากบันทึกแล้ว ค่อยไปดึงข้อมูลล่าสุดจาก Server มาจัดระเบียบ (Rebase)
           git pull origin main --rebase
